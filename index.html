@@ -5,65 +5,100 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
-      /* Enhancements */
-      .navbar a:hover {
-        color: #4facfe;
-        text-decoration: underline;
-        transition: color 0.3s ease;
+      /* General Body Styling */
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
       }
 
-      .project-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease-in-out;
-      }
-
-      .fade-in {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s, transform 0.6s;
-      }
-
-      .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .carousel {
-        display: flex;
-        overflow: hidden;
+      /* Navigation Bar */
+      nav {
+        position: fixed;
+        top: 0;
         width: 100%;
-        position: relative;
+        background-color: #333;
+        color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
       }
 
-      .carousel img {
-        width: 100%;
-        flex-shrink: 0;
-        transition: transform 0.5s ease;
-      }
-
-      .carousel-controls {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-      }
-
-      .carousel-controls button {
-        background: rgba(255, 255, 255, 0.8);
-        border: none;
+      nav ul {
+        list-style: none;
+        margin: 0;
         padding: 10px;
-        cursor: pointer;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #00f2fe;
+      }
+
+      /* Section Styling */
+      section {
+        padding: 60px 20px;
+        margin-top: 60px;
+        text-align: center;
+      }
+
+      section h1, section h2 {
+        color: #4facfe;
+      }
+
+      section p {
+        margin: 10px auto;
+        max-width: 800px;
+        line-height: 1.8;
+      }
+
+      /* Interactive Buttons */
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color: #4facfe;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: #007BFF;
+      }
+
+      /* Responsive Layout */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          padding: 0;
+        }
+
+        nav ul li {
+          margin: 10px 0;
+        }
       }
     </style>
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav>
       <ul>
         <li><a href="#intro">Intro</a></li>
         <li><a href="#about">About Me</a></li>
@@ -74,22 +109,20 @@
     </nav>
 
     <!-- Intro Section -->
-    <section id="intro" class="fade-in">
-      <div class="content">
-        <h1>Subhiksha Sarode</h1>
-        <p>MBA in Business Analytics | Data and Business Consultant</p>
-      </div>
+    <section id="intro">
+      <h1>Subhiksha Sarode</h1>
+      <p>MBA in Business Analytics | Data and Business Consultant<br />
+        Specializing in Data-Driven Decision Making and Business Optimization</p>
     </section>
 
     <!-- About Me Section -->
-    <section id="about" class="fade-in">
+    <section id="about">
       <h2>About Me</h2>
-      <p>I am a results-driven professional...</p>
-      <img src="assets/images/about-photo.jpg" alt="About Me" class="about-img" />
+      <p>I am a results-driven professional with a unique blend of business and technical expertise. Currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, I specialize in leveraging data-driven strategies to solve complex business challenges and optimize performance.</p>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="fade-in">
+    <section id="skills">
       <h2>Skills</h2>
       <ul>
         <li>Python</li>
@@ -99,70 +132,37 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="fade-in">
+    <section id="projects">
       <h2>Projects</h2>
-      <div class="project-card">
+      <article>
         <h3>Formula 1 Race Performance Dashboard</h3>
-        <p>Developed an interactive Power BI...</p>
-        <img src="assets/images/project1-img1.jpg" alt="Formula 1 Dashboard" />
-        <a href="https://drive.google.com/">View Details</a>
-      </div>
-      <div class="carousel">
-        <img src="assets/images/project1-img2.jpg" alt="Slide 1" />
-        <img src="assets/images/project1-img3.jpg" alt="Slide 2" />
-      </div>
-      <div class="carousel-controls">
-        <button id="prev">❮</button>
-        <button id="next">❯</button>
-      </div>
+        <p>Developed an interactive Power BI dashboard analyzing race outcomes and KPIs. Identified optimization opportunities, leading to a 15% improvement in strategic decision-making.</p>
+        <a class="button" href="#">View Details</a>
+      </article>
+
+      <article>
+        <h3>Breast Cancer Predictor Model</h3>
+        <p>Built a breast cancer prediction model using TensorFlow and Python. Achieved high accuracy by leveraging deep learning techniques for early diagnosis and treatment support.</p>
+        <a class="button" href="#">View Details</a>
+      </article>
+
+      <article>
+        <h3>Financial Forecasting Model</h3>
+        <p>Designed a financial forecasting model for a company, enabling accurate revenue and expense predictions. Improved financial decision-making by integrating advanced analytics methods.</p>
+        <a class="button" href="#">View Details</a>
+      </article>
+
+      <article>
+        <h3>ETL Optimization and Data Migration</h3>
+        <p>Optimized ETL pipelines using Informatica and Python, reducing production issue resolution time by 50% and improving data migration efficiency by 60%.</p>
+        <a class="button" href="#">View Details</a>
+      </article>
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="fade-in">
+    <section id="certifications">
       <h2>Certifications</h2>
       <p>Google Data Analytics | Tableau Specialist</p>
     </section>
-
-    <script>
-      // Smooth scrolling
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
-
-      // GSAP animations for fade-in sections
-      const fadeElements = document.querySelectorAll('.fade-in');
-      fadeElements.forEach(el => {
-        gsap.to(el, {
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 90%',
-            toggleClass: 'visible'
-          },
-          opacity: 1,
-          y: 0,
-          duration: 1
-        });
-      });
-
-      // Carousel functionality
-      const carousel = document.querySelector('.carousel');
-      const images = carousel.querySelectorAll('img');
-      let currentIndex = 0;
-
-      document.getElementById('prev').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-      });
-
-      document.getElementById('next').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % images.length;
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-      });
-    </script>
   </body>
 </html>

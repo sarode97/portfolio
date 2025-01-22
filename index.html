@@ -1,168 +1,121 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Portfolio | Subhiksha Sarode</title>
+<head>
+    <title>Subhiksha Sarode Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <style>
-      /* General Body Styling */
-      body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-      }
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
 
-      /* Navigation Bar */
-      nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #333;
-        color: white;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-      }
-
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-      }
-
-      nav ul li {
-        margin: 0 15px;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        transition: color 0.3s;
-      }
-
-      nav ul li a:hover {
-        color: #00f2fe;
-      }
-
-      /* Section Styling */
-      section {
-        padding: 60px 20px;
-        margin-top: 60px;
-        text-align: center;
-      }
-
-      section h1, section h2 {
-        color: #4facfe;
-      }
-
-      section p {
-        margin: 10px auto;
-        max-width: 800px;
-        line-height: 1.8;
-      }
-
-      /* Interactive Buttons */
-      .button {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-top: 10px;
-        background-color: #4facfe;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s;
-      }
-
-      .button:hover {
-        background-color: #007BFF;
-      }
-
-      /* Responsive Layout */
-      @media (max-width: 768px) {
-        nav ul {
-          flex-direction: column;
-          padding: 0;
-        }
-
-        nav ul li {
-          margin: 10px 0;
-        }
-      }
-    </style>
-  </head>
-  <body>
     <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-      </ul>
-    </nav>
+    <header id="header">
+        <div class="inner">
+            <nav id="nav">
+                <ul>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Intro Section -->
-    <section id="intro">
-      <h1>Subhiksha Sarode</h1>
-      <p>MBA in Business Analytics | Data and Business Consultant<br />
-        Specializing in Data-Driven Decision Making and Business Optimization</p>
+    <!-- Intro -->
+    <section id="intro" class="wrapper style1">
+        <div class="inner">
+            <h1>Subhiksha Sarode</h1>
+            <p>MBA in Business Analytics | Data and Business Consultant<br>Specializing in Data-Driven Decision Making and Business Optimization</p>
+        </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a results-driven professional with a unique blend of business and technical expertise. Currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, I specialize in leveraging data-driven strategies to solve complex business challenges and optimize performance.</p>
+    <!-- About Me -->
+    <section id="about" class="wrapper style2">
+        <div class="inner">
+            <h2>About Me</h2>
+            <p>I am a results-driven professional with a unique blend of business and technical expertise. Currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, I specialize in leveraging data-driven strategies to solve complex business challenges and optimize performance.</p>
+        </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>R</li>
-        <li>Power BI</li>
-      </ul>
+    <!-- Skills -->
+    <section id="skills" class="wrapper style3">
+        <div class="inner">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>R</li>
+                <li>Power BI</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <article>
-        <h3>Formula 1 Race Performance Dashboard</h3>
-        <p>Developed an interactive Power BI dashboard analyzing race outcomes and KPIs. Identified optimization opportunities, leading to a 15% improvement in strategic decision-making.</p>
-        <a class="button" href="#">View Details</a>
-      </article>
+    <!-- Projects -->
+    <section id="projects" class="wrapper style4">
+        <div class="inner">
+            <h2>Projects</h2>
+            <div class="timeline">
+                <!-- Formula 1 Project -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Formula 1 Race Performance Dashboard</h3>
+                        <p>Developed an interactive Power BI dashboard analyzing race outcomes and KPIs. Identified optimization opportunities, leading to a 15% improvement in strategic decision-making.</p>
+                    </div>
+                </div>
 
-      <article>
-        <h3>Breast Cancer Predictor Model</h3>
-        <p>Built a breast cancer prediction model using TensorFlow and Python. Achieved high accuracy by leveraging deep learning techniques for early diagnosis and treatment support.</p>
-        <a class="button" href="#">View Details</a>
-      </article>
+                <!-- Breast Cancer Project -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Breast Cancer Predictor Model</h3>
+                        <p>Built a breast cancer prediction model using TensorFlow and Python. Achieved high accuracy by leveraging deep learning techniques for early diagnosis and treatment support.</p>
+                    </div>
+                </div>
 
-      <article>
-        <h3>Financial Forecasting Model</h3>
-        <p>Designed a financial forecasting model for a company, enabling accurate revenue and expense predictions. Improved financial decision-making by integrating advanced analytics methods.</p>
-        <a class="button" href="#">View Details</a>
-      </article>
+                <!-- Financial Forecasting Project -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Financial Forecasting Model</h3>
+                        <p>Developed a financial forecasting model for corporate planning. Analyzed revenue streams and expenditure patterns to enhance decision-making in financial strategy.</p>
+                    </div>
+                </div>
 
-      <article>
-        <h3>ETL Optimization and Data Migration</h3>
-        <p>Optimized ETL pipelines using Informatica and Python, reducing production issue resolution time by 50% and improving data migration efficiency by 60%.</p>
-        <a class="button" href="#">View Details</a>
-      </article>
+                <!-- ETL Optimization Project -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>ETL Optimization and Data Migration</h3>
+                        <p>Optimized ETL pipelines using Informatica and Python, reducing production issue resolution time by 50% and improving data migration efficiency by 60%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <p>Google Data Analytics | Tableau Specialist</p>
+    <!-- Certifications -->
+    <section id="certifications" class="wrapper style5">
+        <div class="inner">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Tableau Desktop Specialist</li>
+                <li>Certified Scrum Master (CSM)</li>
+                <li>Advanced SQL Certification</li>
+            </ul>
+        </div>
     </section>
-  </body>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <p>&copy; Subhiksha Sarode. All rights reserved. Design inspired by HTML5 UP.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>

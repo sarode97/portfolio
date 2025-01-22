@@ -1,236 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subhiksha Sarode Portfolio</title>
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/timeline.css">
-  <script src="assets/js/jquery.min.js"></script>
-  <style>
-    /* Global Styles */
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #121212;
-      color: #ffffff;
-    }
-
-    /* Navbar */
-    nav {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      background: #1f1f1f;
-      z-index: 9999;
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin: 0 1rem;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #4caf50;
-    }
-
-    /* Section Styling */
-    section {
-      padding: 6rem 2rem;
-      text-align: center;
-    }
-
-    #intro {
-      background: linear-gradient(to bottom, #4caf50, #1b1b1b);
-      color: #ffffff;
-      padding: 8rem 2rem;
-    }
-
-    #intro h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    #intro p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    #intro a {
-      text-decoration: none;
-      padding: 0.8rem 2rem;
-      background: #4caf50;
-      color: white;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
-
-    #intro a:hover {
-      background: #3a9a42;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #4caf50;
-    }
-
-    /* Projects Timeline */
-    .timeline {
-      position: relative;
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 0;
-    }
-
-    .timeline::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      background: #4caf50;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -3px;
-    }
-
-    .timeline-item {
-      position: relative;
-      background: #1f1f1f;
-      margin: 1rem 0;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      color: white;
-    }
-
-    .timeline-item h3 {
-      font-size: 1.5rem;
-      color: #4caf50;
-    }
-
-    .timeline-item p {
-      margin-top: 0.5rem;
-    }
-
-    .timeline-item:nth-child(odd) {
-      left: 0;
-    }
-
-    .timeline-item:nth-child(even) {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    /* Responsive Timeline */
-    @media screen and (max-width: 768px) {
-      .timeline-item {
-        left: 0;
-        margin-left: 20px;
-        max-width: calc(100% - 20px);
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhiksha Sarode Portfolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
-  <!-- Navbar -->
-  <nav>
-    <ul>
-      <li><a href="#intro">Intro</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-    </ul>
-  </nav>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+        </ul>
+    </nav>
 
-  <!-- Intro Section -->
-  <section id="intro">
-    <h1>Subhiksha Sarode</h1>
-    <p>MBA in Business Analytics | Data and Business Consultant</p>
-    <p>Specializing in Data-Driven Decision Making and Business Optimization</p>
-    <a href="#about">Learn More</a>
-  </section>
+    <!-- Intro Section -->
+    <header id="intro">
+        <h1>Subhiksha Sarode</h1>
+        <p>MBA in Business Analytics | Data and Business Consultant</p>
+        <p>Specializing in Data-Driven Decision Making and Business Optimization</p>
+    </header>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p>I am a results-driven professional with a unique blend of business and technical expertise. Currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, I specialize in leveraging data-driven strategies to solve complex business challenges and optimize performance.</p>
-  </section>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a results-driven professional with a unique blend of business and technical expertise. 
+            Currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, 
+            I specialize in leveraging data-driven strategies to solve complex business challenges 
+            and optimize performance.
+        </p>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>R</li>
-      <li>Power BI</li>
-    </ul>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>R</li>
+            <li>Power BI</li>
+        </ul>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Formula 1 Race Performance Dashboard</h3>
-        <p>Developed an interactive Power BI dashboard analyzing race outcomes and KPIs. Identified optimization opportunities, leading to a 15% improvement in strategic decision-making.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Breast Cancer Predictor Model</h3>
-        <p>Built a breast cancer prediction model using TensorFlow and Python. Achieved high accuracy by leveraging deep learning techniques for early diagnosis and treatment support.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Financial Forecasting Model</h3>
-        <p>Designed a financial forecasting model to optimize budgeting and financial planning for a multinational firm, leveraging statistical methods to improve forecasting accuracy by 25%.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>ETL Optimization and Data Migration</h3>
-        <p>Optimized ETL pipelines using Informatica and Python, reducing production issue resolution time by 50% and improving data migration efficiency by 60%.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="timeline">
+            <div class="card">
+                <h3>Formula 1 Race Performance Dashboard</h3>
+                <p>
+                    Developed an interactive Power BI dashboard analyzing race outcomes and KPIs. 
+                    Identified optimization opportunities, leading to a 15% improvement in strategic decision-making.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Breast Cancer Predictor Model</h3>
+                <p>
+                    Built a breast cancer prediction model using TensorFlow and Python. 
+                    Achieved high accuracy by leveraging deep learning techniques for early diagnosis and treatment support.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Financial Forecasting Model</h3>
+                <p>
+                    Designed a financial forecasting model to optimize budgeting and financial planning for a multinational firm, 
+                    leveraging statistical methods to improve forecasting accuracy by 25%.
+                </p>
+            </div>
+            <div class="card">
+                <h3>ETL Optimization and Data Migration</h3>
+                <p>
+                    Optimized ETL pipelines using Informatica and Python, reducing production issue resolution time by 50% 
+                    and improving data migration efficiency by 60%.
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Certifications Section -->
-  <section id="certifications">
-    <h2 class="section-title">Certifications</h2>
-    <ul>
-      <li>Certification 1</li>
-      <li>Certification 2</li>
-      <li>Certification 3</li>
-    </ul>
-  </section>
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Data Science Certification</li>
+            <li>Machine Learning Specialization</li>
+            <li>Power BI Expert</li>
+        </ul>
+    </section>
 
-  <script>
-    // Smooth Scroll
-    $('nav a').on('click', function (e) {
-      e.preventDefault();
-      $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top,
-      }, 800);
-    });
-  </script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Subhiksha Sarode. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>

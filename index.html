@@ -1,167 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subhiksha Sarode Portfolio</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Portfolio | Subhiksha Sarode</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
-        /* General Body Styling */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
+      /* Enhancements */
+      .navbar a:hover {
+        color: #4facfe;
+        text-decoration: underline;
+        transition: color 0.3s ease;
+      }
 
-        /* Navigation Bar */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: #333;
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            padding: 1rem 0;
-            z-index: 1000;
-        }
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+      }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            font-weight: bold;
-        }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s, transform 0.6s;
+      }
 
-        nav a:hover {
-            background: #575757;
-            border-radius: 5px;
-        }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
-        section {
-            padding: 4rem 2rem;
-            margin: 4rem 0;
-            text-align: center;
-        }
+      .carousel {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+      }
 
-        #intro {
-            background: #4facfe;
-            color: white;
-            padding: 5rem 2rem;
-        }
+      .carousel img {
+        width: 100%;
+        flex-shrink: 0;
+        transition: transform 0.5s ease;
+      }
 
-        #about-me, #skills, #projects, #certifications {
-            background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 2rem auto;
-            border-radius: 10px;
-            max-width: 800px;
-            padding: 2rem;
-        }
+      .carousel-controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+      }
 
-        h2 {
-            color: #4facfe;
-        }
-
-        .project {
-            margin-bottom: 1.5rem;
-        }
-
-        .project h3 {
-            color: #333;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        footer a {
-            color: #4facfe;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-            }
-
-            section {
-                padding: 2rem 1rem;
-            }
-        }
+      .carousel-controls button {
+        background: rgba(255, 255, 255, 0.8);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
+    </nav>
 
-<nav>
-    <a href="#intro">Intro</a>
-    <a href="#about-me">About Me</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-</nav>
+    <!-- Intro Section -->
+    <section id="intro" class="fade-in">
+      <div class="content">
+        <h1>Subhiksha Sarode</h1>
+        <p>MBA in Business Analytics | Data and Business Consultant</p>
+      </div>
+    </section>
 
-<section id="intro">
-    <h1>Subhiksha Sarode</h1>
-    <p>MBA in Business Analytics | Data and Business Consultant<br>Specializing in Data-Driven Decision Making and Business Optimization</p>
-</section>
+    <!-- About Me Section -->
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>I am a results-driven professional...</p>
+      <img src="assets/images/about-photo.jpg" alt="About Me" class="about-img" />
+    </section>
 
-<section id="about-me">
-    <h2>About Me</h2>
-    <p>I am a results-driven professional with a unique blend of business and technical expertise. Currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, I specialize in leveraging data-driven strategies to solve complex business challenges and optimize performance.</p>
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python</li>
+        <li>R</li>
+        <li>Power BI</li>
+      </ul>
+    </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <p><strong>Tools:</strong> Power BI, Tableau, Excel, Informatica, Databricks<br>
-       <strong>Programming:</strong> Python, R, SQL<br>
-       <strong>Key Areas:</strong> ETL-Data Pipelining, Business Optimization, Strategic Consulting</p>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="project-card">
         <h3>Formula 1 Race Performance Dashboard</h3>
-        <p>Developed an interactive Power BI dashboard analyzing race outcomes and KPIs. Identified optimization opportunities, leading to a 15% improvement in strategic decision-making. <a href="https://drive.google.com" target="_blank">[View Details]</a></p>
-    </div>
+        <p>Developed an interactive Power BI...</p>
+        <img src="assets/images/project1-img1.jpg" alt="Formula 1 Dashboard" />
+        <a href="https://drive.google.com/">View Details</a>
+      </div>
+      <div class="carousel">
+        <img src="assets/images/project1-img2.jpg" alt="Slide 1" />
+        <img src="assets/images/project1-img3.jpg" alt="Slide 2" />
+      </div>
+      <div class="carousel-controls">
+        <button id="prev">❮</button>
+        <button id="next">❯</button>
+      </div>
+    </section>
 
-    <div class="project">
-        <h3>Breast Cancer Predictor Model</h3>
-        <p>Built a breast cancer prediction model using TensorFlow and Python. Achieved high accuracy by leveraging deep learning techniques for early diagnosis and treatment support. <a href="https://drive.google.com" target="_blank">[View Details]</a></p>
-    </div>
+    <!-- Certifications Section -->
+    <section id="certifications" class="fade-in">
+      <h2>Certifications</h2>
+      <p>Google Data Analytics | Tableau Specialist</p>
+    </section>
 
-    <div class="project">
-        <h3>Financial Forecasting Model</h3>
-        <p>Designed a financial forecasting model to predict revenue trends. Leveraged financial metrics and analysis for strategic decision-making, ensuring accuracy in predictions for company growth. <a href="https://drive.google.com" target="_blank">[View Details]</a></p>
-    </div>
+    <script>
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
 
-    <div class="project">
-        <h3>ETL Optimization and Data Migration</h3>
-        <p>Optimized ETL pipelines using Informatica and Python, reducing production issue resolution time by 50% and improving data migration efficiency by 60%. <a href="https://drive.google.com" target="_blank">[View Details]</a></p>
-    </div>
+      // GSAP animations for fade-in sections
+      const fadeElements = document.querySelectorAll('.fade-in');
+      fadeElements.forEach(el => {
+        gsap.to(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 90%',
+            toggleClass: 'visible'
+          },
+          opacity: 1,
+          y: 0,
+          duration: 1
+        });
+      });
 
-</section>
+      // Carousel functionality
+      const carousel = document.querySelector('.carousel');
+      const images = carousel.querySelectorAll('img');
+      let currentIndex = 0;
 
-<section id="certifications">
-    <h2>Certifications</h2>
-    <p>Data Science Professional Certificate - Coursera<br>Power BI Certification - Microsoft<br>Python for Data Analysis - Udemy</p>
-</section>
+      document.getElementById('prev').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+      });
 
-<footer>
-    <p>&copy; 2025 Subhiksha Sarode. Built with ❤️ and HTML5.</p>
-</footer>
-
-</body>
+      document.getElementById('next').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+      });
+    </script>
+  </body>
 </html>

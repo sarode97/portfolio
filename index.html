@@ -10,95 +10,115 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background: linear-gradient(to right, #02aab0, #00cdac);
+      background: #f8f9fa;
       color: #333;
     }
 
-    .container {
-      width: 80%;
-      margin: auto;
-      overflow: hidden;
-    }
-
     header {
+      background: linear-gradient(to right, #02aab0, #00cdac);
+      color: white;
       text-align: center;
-      padding: 50px 0;
-      color: #fff;
+      padding: 100px 20px;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin: 0;
+      font-weight: bold;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      margin-top: 10px;
     }
 
     .cta-btn {
       display: inline-block;
       margin-top: 20px;
-      text-decoration: none;
-      background: #02aab0;
-      color: #fff;
       padding: 10px 20px;
+      background: white;
+      color: #02aab0;
+      text-decoration: none;
       border-radius: 5px;
-      transition: background 0.3s ease;
+      font-weight: bold;
+      transition: all 0.3s ease;
     }
 
     .cta-btn:hover {
       background: #00cdac;
+      color: white;
     }
 
     section {
-      padding: 50px 0;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    .about {
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #02aab0;
+    }
+
+    #about {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
+      gap: 30px;
+      flex-wrap: wrap;
     }
 
-    .about img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
+    #about img {
+      width: 300px;
+      height: 300px;
       object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .projects .project {
+    #about div {
+      flex: 1;
+    }
+
+    #projects .project {
       display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 30px;
+      gap: 30px;
+      flex-wrap: wrap;
     }
 
-    .projects img {
-      width: 100%;
-      max-width: 400px;
-      margin-right: 20px;
-      border-radius: 5px;
+    #projects img {
+      width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .contact {
+    #projects div {
+      flex: 1;
+    }
+
+    #contact {
       text-align: center;
-      background: #00cdac;
-      color: #fff;
-      padding: 30px 0;
+      background: linear-gradient(to right, #02aab0, #00cdac);
+      color: white;
+      padding: 50px 20px;
     }
 
     .social-links a {
       margin: 0 10px;
-      color: #fff;
-      text-decoration: none;
       font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
       background: #333;
-      color: #fff;
+      color: white;
+      padding: 20px 0;
     }
   </style>
 </head>
@@ -111,10 +131,10 @@
 </header>
 
 <section id="about">
-  <div class="container about">
+  <h2>About Me</h2>
+  <div>
     <img src="assets/profile.jpg" alt="Subhiksha Sarode">
     <div>
-      <h2>About Me</h2>
       <p>I am a passionate Business and Data Consultant with expertise in MBA Business Analytics. With a strong foundation in data-driven strategies and problem-solving, I excel at delivering actionable insights to drive business success.</p>
       <p>My key strengths include predictive modeling, advanced analytics, and project management. I am committed to continuous learning and leveraging technology to create impactful solutions.</p>
       <a href="assets/resume.pdf" class="cta-btn" target="_blank">View Resume</a>
@@ -123,44 +143,39 @@
 </section>
 
 <section id="projects">
-  <div class="container">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
 
-    <div class="projects">
-      <div class="project">
-        <img src="assets/project1.jpg" alt="F1 Analysis">
-        <div>
-          <h3>F1 Race Performance Analysis</h3>
-          <p>Utilized Power BI to analyze Formula 1 race data, focusing on lap times, constructor performance, and pit stop efficiency. This project improved strategic decision-making in simulated scenarios.</p>
-          <a href="https://example.com/project1" class="cta-btn">View Project</a>
-          <a href="https://github.com/example/project1" class="cta-btn">Source Code</a>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="assets/project2.jpg" alt="Retail Optimization">
-        <div>
-          <h3>Retail Sales Optimization</h3>
-          <p>Designed SQL-based sales tracking systems and improved customer service metrics using data visualization techniques, leading to a 15% increase in sales performance.</p>
-          <a href="https://example.com/project2" class="cta-btn">View Project</a>
-          <a href="https://github.com/example/project2" class="cta-btn">Source Code</a>
-        </div>
-      </div>
+  <div class="project">
+    <img src="assets/project1.jpg" alt="F1 Analysis">
+    <div>
+      <h3>F1 Race Performance Analysis</h3>
+      <p>Utilized Power BI to analyze Formula 1 race data, focusing on lap times, constructor performance, and pit stop efficiency. This project improved strategic decision-making in simulated scenarios.</p>
+      <a href="https://example.com/project1" class="cta-btn">View Project</a>
+      <a href="https://github.com/example/project1" class="cta-btn">Source Code</a>
     </div>
   </div>
+
+  <div class="project">
+    <img src="assets/project2.jpg" alt="Retail Optimization">
+    <div>
+      <h3>Retail Sales Optimization</h3>
+      <p>Designed SQL-based sales tracking systems and improved customer service metrics using data visualization techniques, leading to a 15% increase in sales performance.</p>
+      <a href="https://example.com/project2" class="cta-btn">View Project</a>
+      <a href="https://github.com/example/project2" class="cta-btn">Source Code</a>
+    </div>
+  </div>
+
 </section>
 
 <section id="contact">
-  <div class="contact">
-    <h2>Contact Me</h2>
-    <p>I'm always excited to collaborate on new projects or discuss innovative ideas.</p>
-    <a href="mailto:subhiksha.sarode@example.com" class="cta-btn">Get in Touch</a>
+  <h2>Contact Me</h2>
+  <p>I'm always excited to collaborate on new projects or discuss innovative ideas.</p>
+  <a href="mailto:subhiksha.sarode@example.com" class="cta-btn">Get in Touch</a>
 
-    <div class="social-links">
-      <a href="https://twitter.com/example" target="_blank">Twitter</a>
-      <a href="https://linkedin.com/in/example" target="_blank">LinkedIn</a>
-      <a href="https://github.com/example" target="_blank">GitHub</a>
-    </div>
+  <div class="social-links">
+    <a href="https://twitter.com/example" target="_blank">Twitter</a>
+    <a href="https://linkedin.com/in/example" target="_blank">LinkedIn</a>
+    <a href="https://github.com/example" target="_blank">GitHub</a>
   </div>
 </section>
 

@@ -1,99 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subhiksha Sarode Portfolio</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subhiksha Sarode Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <ul>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-        </ul>
+  <!-- Header Section -->
+  <header id="header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
     </nav>
+    <div class="hero">
+      <h1>Subhiksha Sarode</h1>
+      <p>MBA in Business Analytics | Data and Business Consultant</p>
+      <p>Specializing in Data-Driven Decision Making and Business Optimization</p>
+    </div>
+  </header>
 
-    <!-- Intro Section -->
-    <header id="intro">
-        <h1>Subhiksha Sarode</h1>
-        <p>MBA in Business Analytics | Data and Business Consultant</p>
-        <p>Specializing in Data-Driven Decision Making and Business Optimization</p>
-    </header>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a results-driven professional with a unique blend of business and technical expertise. Currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, I specialize in leveraging data-driven strategies to solve complex business challenges and optimize performance.</p>
+  </section>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a results-driven professional with a unique blend of business and technical expertise. 
-            Currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, 
-            I specialize in leveraging data-driven strategies to solve complex business challenges 
-            and optimize performance.
-        </p>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>R</li>
+      <li>Power BI</li>
+    </ul>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>R</li>
-            <li>Power BI</li>
-        </ul>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Formula 1 Race Performance Dashboard</h3>
+        <p>Developed an interactive Power BI dashboard analyzing race outcomes and KPIs. Identified optimization opportunities, leading to a 15% improvement in strategic decision-making.</p>
+      </div>
+      <div class="card">
+        <h3>Breast Cancer Predictor Model</h3>
+        <p>Built a breast cancer prediction model using TensorFlow and Python. Achieved high accuracy by leveraging deep learning techniques for early diagnosis and treatment support.</p>
+      </div>
+      <div class="card">
+        <h3>Financial Forecasting Model</h3>
+        <p>Designed a financial forecasting model to optimize budgeting and financial planning for a multinational firm, leveraging statistical methods to improve forecasting accuracy by 25%.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="timeline">
-            <div class="card">
-                <h3>Formula 1 Race Performance Dashboard</h3>
-                <p>
-                    Developed an interactive Power BI dashboard analyzing race outcomes and KPIs. 
-                    Identified optimization opportunities, leading to a 15% improvement in strategic decision-making.
-                </p>
-            </div>
-            <div class="card">
-                <h3>Breast Cancer Predictor Model</h3>
-                <p>
-                    Built a breast cancer prediction model using TensorFlow and Python. 
-                    Achieved high accuracy by leveraging deep learning techniques for early diagnosis and treatment support.
-                </p>
-            </div>
-            <div class="card">
-                <h3>Financial Forecasting Model</h3>
-                <p>
-                    Designed a financial forecasting model to optimize budgeting and financial planning for a multinational firm, 
-                    leveraging statistical methods to improve forecasting accuracy by 25%.
-                </p>
-            </div>
-            <div class="card">
-                <h3>ETL Optimization and Data Migration</h3>
-                <p>
-                    Optimized ETL pipelines using Informatica and Python, reducing production issue resolution time by 50% 
-                    and improving data migration efficiency by 60%.
-                </p>
-            </div>
-        </div>
-    </section>
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <ul class="certifications-list">
+      <li>Tableau Desktop Specialist</li>
+      <li>Google Data Analytics Professional Certificate</li>
+      <li>Microsoft Azure Data Fundamentals</li>
+    </ul>
+  </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Data Science Certification</li>
-            <li>Machine Learning Specialization</li>
-            <li>Power BI Expert</li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Subhiksha Sarode. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Subhiksha Sarode. All rights reserved.</p>
+    <ul class="socials">
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-github"></i></a></li>
+    </ul>
+  </footer>
 </body>
 </html>

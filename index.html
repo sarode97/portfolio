@@ -3,81 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subhiksha Sarode Portfolio</title>
-  <link rel="stylesheet" href="assets/css/main.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: linear-gradient(to right, #02aab0, #00cdac);
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    section {
+      padding: 2rem 0;
+    }
+
+    .hero-title {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .hero-title span {
+      color: #02aab0;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background: #02aab0;
+      color: #fff;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: #00cdac;
+    }
+
+    .about-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .about-wrapper__image img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-wrapper__info {
+      max-width: 500px;
+    }
+
+    .project-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1rem 0;
+    }
+
+    .project-wrapper__text {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    .project-wrapper__image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .contact-wrapper {
+      text-align: center;
+    }
+
+    .social-links a {
+      margin: 0 0.5rem;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header id="header">
-    <nav class="navbar">
-      <ul>
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1>Subhiksha Sarode</h1>
-      <p>MBA in Business Analytics | Data and Business Consultant</p>
-      <p>Specializing in Data-Driven Decision Making and Business Optimization</p>
+
+<header>
+  <h1>Welcome to My Portfolio</h1>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="container">
+  <h1 class="hero-title">
+    Hi, my name is <span>Subhiksha Sarode</span><br />
+    I'm the Unknown Developer.
+  </h1>
+  <p class="hero-cta">
+    <a href="#about" class="cta-btn">Know more</a>
+  </p>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container">
+  <h2>About me</h2>
+  <div class="about-wrapper">
+    <div class="about-wrapper__image">
+      <img src="assets/profile.jpg" alt="Profile Image" />
     </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I am a results-driven professional with a unique blend of business and technical expertise. Currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, I specialize in leveraging data-driven strategies to solve complex business challenges and optimize performance.</p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Python</li>
-      <li>R</li>
-      <li>Power BI</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-cards">
-      <div class="card">
-        <h3>Formula 1 Race Performance Dashboard</h3>
-        <p>Developed an interactive Power BI dashboard analyzing race outcomes and KPIs. Identified optimization opportunities, leading to a 15% improvement in strategic decision-making.</p>
-      </div>
-      <div class="card">
-        <h3>Breast Cancer Predictor Model</h3>
-        <p>Built a breast cancer prediction model using TensorFlow and Python. Achieved high accuracy by leveraging deep learning techniques for early diagnosis and treatment support.</p>
-      </div>
-      <div class="card">
-        <h3>Financial Forecasting Model</h3>
-        <p>Designed a financial forecasting model to optimize budgeting and financial planning for a multinational firm, leveraging statistical methods to improve forecasting accuracy by 25%.</p>
-      </div>
+    <div class="about-wrapper__info">
+      <p>
+        I am a passionate developer and problem solver with a love for creating impactful solutions. I enjoy learning new technologies and collaborating on innovative projects.
+      </p>
+      <p>
+        My hobbies include exploring data science, experimenting with AI/ML, and contributing to open-source communities. My goal is to make a meaningful difference through technology.
+      </p>
+      <a href="assets/resume.pdf" class="cta-btn" target="_blank">View Resume</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Certifications Section -->
-  <section id="certifications" class="section">
-    <h2>Certifications</h2>
-    <ul class="certifications-list">
-      <li>Tableau Desktop Specialist</li>
-      <li>Google Data Analytics Professional Certificate</li>
-      <li>Microsoft Azure Data Fundamentals</li>
-    </ul>
-  </section>
+<!-- Projects Section -->
+<section id="projects" class="container">
+  <h2>Projects</h2>
+  <div class="project-wrapper">
+    <div class="project-wrapper__text">
+      <h3>F1 Race Performance Analysis</h3>
+      <p>
+        Analyzed Formula 1 race data using Power BI, focusing on lap times, constructor performance, and pit stop analysis. This project enhanced insights into team strategies and race outcomes.
+      </p>
+      <a href="https://example.com/project1" class="cta-btn">See Live</a>
+      <a href="https://github.com/example/project1" class="cta-btn">Source Code</a>
+    </div>
+    <div class="project-wrapper__image">
+      <img src="assets/project1.jpg" alt="Project Image" />
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <p>&copy; 2025 Subhiksha Sarode. All rights reserved.</p>
-    <ul class="socials">
-      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="#"><i class="fab fa-github"></i></a></li>
-    </ul>
-  </footer>
+<!-- Contact Section -->
+<section id="contact" class="container">
+  <h2>Contact</h2>
+  <div class="contact-wrapper">
+    <p>Let's collaborate on exciting projects or discuss new opportunities!</p>
+    <a href="mailto:subhiksha.sarode@example.com" class="cta-btn">Get in Touch</a>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <div class="social-links">
+    <a href="https://twitter.com/example" target="_blank">Twitter</a>
+    <a href="https://linkedin.com/in/example" target="_blank">LinkedIn</a>
+    <a href="https://github.com/example" target="_blank">GitHub</a>
+  </div>
+  <p>&copy; 2025 Subhiksha Sarode. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

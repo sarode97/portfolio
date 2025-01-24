@@ -1,187 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subhiksha Sarode | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f8f9fa;
-      color: #333;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subhiksha Sarode</title>
+    <link rel="stylesheet" href="Libraries/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav-logo">Subhiksha Sarode</a>
 
-    header {
-      background: linear-gradient(to right, #02aab0, #00cdac);
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list grid">
+            <li class="nav-item">
+              <a href="#home" class="nav-link"><i class="fa-solid fa-house nav-icon"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link"><i class="fa-solid fa-user nav-icon"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link"><i class="fa-solid fa-file nav-icon"></i> Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link"><i class="fa-solid fa-briefcase nav-icon"></i> Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link"><i class="fa-solid fa-message nav-icon"></i> Contact</a>
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
+        </div>
 
-    header h1 {
-      font-size: 2.8rem;
-      margin: 0;
-      font-weight: bold;
-    }
+        <div class="nav-btns">
+          <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
 
-    header p {
-      font-size: 1.5rem;
-      margin-top: 10px;
-    }
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    .cta-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: white;
-      color: #02aab0;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
+    <main class="main">
+      <!-- Home Section -->
+      <section class="home section" id="home">
+        <div class="home-container container grid">
+          <div class="home-content grid">
+            <div class="home-social">
+              <a href="https://www.linkedin.com/in/subhiksha-sarode" target="_blank" class="home-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:subhikshasarode@gmail.com" target="_blank" class="home-social-icon"><i class="fa-regular fa-envelope"></i></a>
+            </div>
 
-    .cta-btn:hover {
-      background: #00cdac;
-      color: white;
-    }
+            <div class="home-data">
+              <h1 class="home-title">Hi, I am Subhiksha Sarode</h1>
+              <h3 class="home-subtitle">Business Analyst & Data Enthusiast</h3>
+              <p class="home-description">
+                I bring over 3 years of expertise in data analytics, strategic consulting, and project management. Passionate about leveraging data to drive informed decisions.
+              </p>
+              <a href="#contact" class="button button-flex">Contact Me <i class="fa-regular fa-envelope button-icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    section {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+      <!-- About Section -->
+      <section class="about section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <span class="section-subtitle">My Background</span>
 
-    h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #02aab0;
-    }
+        <div class="about-container container grid">
+          <img src="Assets/Icons/aboutimg.png" alt="" class="about-img" />
 
-    #about {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
+          <div class="about-data">
+            <p class="about-description">
+              I am currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, with a focus on analytics-driven decision-making. With experience in data engineering, consulting, and visualization, I excel in transforming complex datasets into actionable insights. My passion lies in optimizing business processes and driving efficiency.
+            </p>
 
-    #about img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+            <div class="about-info">
+              <div>
+                <span class="about-info-title">03+</span>
+                <span class="about-info-name">Years of Experience</span>
+              </div>
+              <div>
+                <span class="about-info-title">20+</span>
+                <span class="about-info-name">Completed Projects</span>
+              </div>
+              <div>
+                <span class="about-info-title">05+</span>
+                <span class="about-info-name">Industries Served</span>
+              </div>
+            </div>
 
-    #about div {
-      flex: 1;
-    }
+            <div class="about-buttons">
+              <a download="" href="Assets/Resume.pdf" class="button button-flex">Download Resume<i class="fa-solid fa-file-arrow-down button-icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    #projects .project {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 30px;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
+      <!-- Skills Section -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <span class="section-subtitle">Technical Expertise</span>
+        <div class="skills-content container">
+          <div class="skills-name">Power BI</div>
+          <div class="skills-name">Tableau</div>
+          <div class="skills-name">Advanced Excel</div>
+          <div class="skills-name">Python</div>
+          <div class="skills-name">SQL</div>
+          <div class="skills-name">Pyspark</div>
+          <div class="skills-name">Azure Cloud</div>
+          <div class="skills-name">ETL Pipelines</div>
+          <div class="skills-name">Data Visualization</div>
+          <div class="skills-name">Project Management</div>
+        </div>
+      </section>
 
-    #projects img {
-      width: 500px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+      <!-- Projects Section -->
+      <section class="portfolio section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <span class="section-subtitle">Recent Work</span>
 
-    #projects div {
-      flex: 1;
-    }
+        <div class="portfolio-container container grid">
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Formula 1 Race Performance Dashboard</h3>
+            <p class="portfolio-description">
+              Built an interactive dashboard using Power BI to analyze race outcomes and KPIs, leading to a 15% optimization in strategy.
+            </p>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Market Expansion Growth Strategy</h3>
+            <p class="portfolio-description">
+              Led analytics teams to identify growth opportunities in China and Brazil, achieving a 20% increase in market penetration.
+            </p>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Data Migration Projects</h3>
+            <p class="portfolio-description">
+              Optimized data pipelines and increased processing efficiency by 60% using SAP, Pyspark, and Data Bricks.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    #contact {
-      text-align: center;
-      background: linear-gradient(to right, #02aab0, #00cdac);
-      color: white;
-      padding: 50px 20px;
-    }
+      <!-- Contact Section -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <span class="section-subtitle">Get in Touch</span>
 
-    .social-links a {
-      margin: 0 10px;
-      font-size: 1.5rem;
-      color: white;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      background: #333;
-      color: white;
-      padding: 20px 0;
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>Hi, my name is Subhiksha Sarode</h1>
-  <p>I'm a Business and Data Consultant specializing in MBA Business Analytics.</p>
-  <a href="#about" class="cta-btn">Know More</a>
-</header>
-
-<section id="about">
-  <h2>About Me</h2>
-  <div>
-    <img src="assets/profile.jpg" alt="Subhiksha Sarode">
-    <div>
-      <p>I am a passionate Business and Data Consultant with expertise in MBA Business Analytics. With a strong foundation in data-driven strategies and problem-solving, I excel at delivering actionable insights to drive business success.</p>
-      <p>My key strengths include predictive modeling, advanced analytics, and project management. I am committed to continuous learning and leveraging technology to create impactful solutions.</p>
-      <a href="assets/resume.pdf" class="cta-btn" target="_blank">View Resume</a>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project">
-    <img src="assets/project1.jpg" alt="F1 Analysis">
-    <div>
-      <h3>F1 Race Performance Analysis</h3>
-      <p>Utilized Power BI to analyze Formula 1 race data, focusing on lap times, constructor performance, and pit stop efficiency. This project improved strategic decision-making in simulated scenarios.</p>
-      <a href="https://example.com/project1" class="cta-btn">View Project</a>
-      <a href="https://github.com/example/project1" class="cta-btn">Source Code</a>
-    </div>
-  </div>
-
-  <div class="project">
-    <img src="assets/project2.jpg" alt="Retail Optimization">
-    <div>
-      <h3>Retail Sales Optimization</h3>
-      <p>Designed SQL-based sales tracking systems and improved customer service metrics using data visualization techniques, leading to a 15% increase in sales performance.</p>
-      <a href="https://example.com/project2" class="cta-btn">View Project</a>
-      <a href="https://github.com/example/project2" class="cta-btn">Source Code</a>
-    </div>
-  </div>
-
-</section>
-
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>I'm always excited to collaborate on new projects or discuss innovative ideas.</p>
-  <a href="mailto:subhiksha.sarode@example.com" class="cta-btn">Get in Touch</a>
-
-  <div class="social-links">
-    <a href="https://twitter.com/example" target="_blank">Twitter</a>
-    <a href="https://linkedin.com/in/example" target="_blank">LinkedIn</a>
-    <a href="https://github.com/example" target="_blank">GitHub</a>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2025 Subhiksha Sarode. All Rights Reserved.</p>
-</footer>
-
-</body>
+        <div class="contact-container container grid">
+          <div class="contact-info">
+            <i class="fa-regular fa-envelope contact-icon"></i>
+            <div>
+              <h3 class="contact-title">Email</h3>
+              <a href="mailto:subhikshasarode@gmail.com" target="_blank" class="contact-subtitle">subhikshasarode@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-linkedin contact-icon"></i>
+            <div>
+              <h3 class="contact-title">LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/subhiksha-sarode" target="_blank" class="contact-subtitle">linkedin.com/in/subhiksha-sarode</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

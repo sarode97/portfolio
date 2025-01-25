@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <!-- Header -->
+    <!-- header  -->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav-logo">Subhiksha Sarode</a>
@@ -15,21 +15,30 @@
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list grid">
             <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#home" class="nav-link"><i class="fa-solid fa-house nav-icon"></i> Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
+              <a href="#about" class="nav-link"><i class="fa-solid fa-user nav-icon"></i> About</a>
             </li>
             <li class="nav-item">
-              <a href="#skills" class="nav-link">Skills</a>
+              <a href="#skills" class="nav-link"><i class="fa-solid fa-file nav-icon"></i> Skills</a>
             </li>
             <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#projects" class="nav-link"><i class="fa-solid fa-briefcase nav-icon"></i> Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link"><i class="fa-solid fa-message nav-icon"></i> Contact</a>
             </li>
           </ul>
+          <i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
+        </div>
+
+        <div class="nav-btns">
+          <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </nav>
     </header>
@@ -38,12 +47,21 @@
       <!-- Home Section -->
       <section class="home section" id="home">
         <div class="home-container container grid">
-          <h1 class="home-title">Hi, I am Subhiksha Sarode</h1>
-          <h3 class="home-subtitle">Data Consultant | Business Analyst</h3>
-          <p>
-            I bring over 3 years of expertise in data analytics, strategic consulting, and project management. Passionate about leveraging data to drive informed decisions.
-          </p>
-          <a href="#contact" class="button button-flex">Contact Me</a>
+          <div class="home-content grid">
+            <div class="home-social">
+              <a href="https://www.linkedin.com/in/subhiksha-sarode" target="_blank" class="home-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:subhikshasarode@gmail.com" target="_blank" class="home-social-icon"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+
+            <div class="home-data">
+              <h1 class="home-title">Hi, I am Subhiksha Sarode</h1>
+              <h3 class="home-subtitle">Data Consultant | Business Analyst</h3>
+              <p class="home-description">
+                I bring over 3 years of expertise in data analytics, strategic consulting, and project management. Passionate about leveraging data to drive informed decisions.
+              </p>
+              <a href="#contact" class="button button-flex">Contact Me <i class="fa-regular fa-envelope button-icon"></i></a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -51,57 +69,145 @@
       <section class="about section" id="about">
         <h2 class="section-title">About Me</h2>
         <span class="section-subtitle">My Background</span>
-        <p>
-          I am currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, with a focus on analytics-driven decision-making. With experience in data engineering, consulting, and visualization, I excel in transforming complex datasets into actionable insights. My passion lies in optimizing business processes and driving efficiency.
-        </p>
+
+        <div class="about-container container grid">
+          <img src="Assets/Icons/aboutimg.png" alt="" class="about-img" />
+
+          <div class="about-data">
+            <p class="about-description">
+              I am currently pursuing an MBA in Business Analytics at Illinois Institute of Technology, with a focus on analytics-driven decision-making. With experience in data engineering, consulting, and visualization, I excel in transforming complex datasets into actionable insights. My passion lies in optimizing business processes and driving efficiency.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <!-- Work Experience Section -->
-      <section class="work section" id="work-experience">
-        <h2 class="section-title">Work Experience</h2>
-        <div class="work-container container">
-          <div class="work-item">
-            <h3 class="work-title" style="color: var(--first-color);">Data Engineer</h3>
-            <p class="work-subtitle" style="color: black;">Techeva Consulting</p>
+          <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem;">
+            <div>
+              <h3 class="work-title" style="color: var(--first-color);">Data Engineer</h3>
+              <span class="work-subtitle" style="color: #000;">Techeva Consulting</span>
+            </div>
+            <div>
+              <h3 class="work-title" style="color: var(--first-color);">Associate Business Analyst</h3>
+              <span class="work-subtitle" style="color: #000;">Infosys</span>
+            </div>
+            <div>
+              <h3 class="work-title" style="color: var(--first-color);">Associate Consultant</h3>
+              <span class="work-subtitle" style="color: #000;">Infosys</span>
+            </div>
           </div>
-          <div class="work-item">
-            <h3 class="work-title" style="color: var(--first-color);">Associate Business Analyst</h3>
-            <p class="work-subtitle" style="color: black;">Infosys</p>
-          </div>
-          <div class="work-item">
-            <h3 class="work-title" style="color: var(--first-color);">Associate Consultant</h3>
-            <p class="work-subtitle" style="color: black;">Infosys</p>
-          </div>
-        </div>
-        <div class="work-resume">
-          <a download="" href="Assets/Resume.pdf" class="button button-flex">Download Resume</a>
         </div>
       </section>
+
+      <!-- Resume Download -->
+      <section>
+      <div>
+      <div class="about-buttons" style="text-align: center;">
+        <a download="" href="Assets/Resume.pdf" class="button button-flex">Download Resume<i class="fa-solid fa-file-arrow-down button-icon"></i></a>
+      </div>
+    </div>
+    </section>
 
       <!-- Skills Section -->
       <section class="skills section" id="skills">
         <h2 class="section-title">Skills</h2>
-        <div class="skills-container container">
-          <div class="skills-tools">
+        <span class="section-subtitle">Technical Expertise</span>
+
+        <div class="skills-content container">
+          <div class="skills-grid" style="margin-bottom: 2rem;">
             <h3>Tools</h3>
-            <div class="skills-list">
-              <span>Power BI</span>
-              <span>Tableau</span>
-              <span>Python</span>
-              <span>Pyspark</span>
-              <span>Databricks</span>
-              <span>MySQL</span>
-              <span>Advanced Excel</span>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+              <span class="skills-name">Power BI</span>
+              <span class="skills-name">Tableau</span>
+              <span class="skills-name">Python</span>
+              <span class="skills-name">Pyspark</span>
+              <span class="skills-name">Databricks</span>
+              <span class="skills-name">MySQL</span>
+              <span class="skills-name">Advanced Excel</span>
             </div>
           </div>
-          <div class="skills-expertise">
-            <h3>Key Knowledge Areas</h3>
-            <div class="skills-list">
-              <span>Data Analysis</span>
-              <span>ETL Pipelines</span>
-              <span>Business Process Optimization</span>
-              <span>Project Management</span>
-              <span>Strategic Consulting</span>
+          <div class="skills-grid" style="margin-bottom: 2rem;">
+            <h3>Area of Expertise / Key Knowledge Areas</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+              <span class="skills-name">Data Analysis</span>
+              <span class="skills-name">Data Migration (ETL Pipelines)</span>
+              <span class="skills-name">Business Process Optimization</span>
+              <span class="skills-name">Product Life Cycle Management</span>
+              <span class="skills-name">Project Management</span>
+              <span class="skills-name">Data Visualization</span>
+              <span class="skills-name">Strategic Consulting</span>
+              <span class="skills-name">Stakeholder Management</span>
+              <span class="skills-name">Cross-Cultural Collaboration</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="portfolio section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <span class="section-subtitle">Recent Work</span>
+
+        <div class="portfolio-container container">
+          <div class="portfolio-row">
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Formula 1 Race Performance Dashboard</h3>
+              <p class="portfolio-description">
+                Built an interactive dashboard using Power BI to analyze race outcomes and KPIs, leading to a 15% optimization in strategy.
+              </p>
+              <a href="https://drive.google.com" target="_blank" class="button button-link">Know More</a>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Market Expansion Growth Strategy</h3>
+              <p class="portfolio-description">
+                Led analytics teams to identify growth opportunities in China and Brazil, achieving a 20% increase in market penetration.
+              </p>
+              <a href="https://drive.google.com" target="_blank" class="button button-link">Know More</a>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Financial ETL Pipelines</h3>
+              <p class="portfolio-description">
+                Developed optimized ETL pipelines for financial data, improving invoicing accuracy and enhancing forecasting capabilities.
+              </p>
+              <a href="https://drive.google.com" target="_blank" class="button button-link">Know More</a>
+            </div>
+          </div>
+          <div class="portfolio-row">
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Breast Cancer Predictor Model</h3>
+              <p class="portfolio-description">
+                Built a machine learning model using Python to predict breast cancer cases with 95% accuracy, aiding early detection and diagnosis.
+              </p>
+              <a href="https://drive.google.com" target="_blank" class="button button-link">Know More</a>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Data Migration Automation</h3>
+              <p class="portfolio-description">
+                Automated ETL processes for large-scale data migration, improving data accuracy by 30% and reducing manual effort.
+              </p>
+              <a href="https://drive.google.com" target="_blank" class="button button-link">Know More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <span class="section-subtitle">Get in Touch</span>
+
+        <div class="contact-container container grid">
+          <div class="contact-info">
+            <i class="fa-regular fa-envelope contact-icon"></i>
+            <div>
+              <h3 class="contact-title">Email</h3>
+              <a href="mailto:subhikshasarode@gmail.com" target="_blank" class="contact-subtitle">subhikshasarode@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-linkedin contact-icon"></i>
+            <div>
+              <h3 class="contact-title">LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/subhiksha-sarode" target="_blank" class="contact-subtitle">linkedin.com/in/subhiksha-sarode</a>
             </div>
           </div>
         </div>

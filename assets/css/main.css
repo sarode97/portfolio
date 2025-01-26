@@ -163,25 +163,6 @@ a:hover {
   color: var(--text-color);
 }
 
-.about-info {
-  display: flex;
-  justify-content: space-around;
-}
-
-.about-info div {
-  text-align: center;
-}
-
-.about-info-title {
-  font-size: var(--h2-font-size);
-  color: var(--first-color);
-}
-
-.about-info-name {
-  font-size: var(--small-font-size);
-  color: var(--text-color);
-}
-
 /* Skills Section */
 .skills {
   padding: 4rem 1rem;
@@ -219,7 +200,7 @@ a:hover {
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 2rem; /* Add spacing between projects */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -250,8 +231,9 @@ a:hover {
 }
 
 .contact-container {
-  display: grid;
-  gap: 2rem;
+  display: flex;
+  justify-content: center; /* Center align */
+  gap: 2rem; /* Add spacing between email and LinkedIn */
   max-width: 800px;
   margin: 0 auto;
 }
@@ -259,7 +241,7 @@ a:hover {
 .contact-info {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .contact-icon {
@@ -275,30 +257,4 @@ a:hover {
 .contact-subtitle {
   font-size: var(--small-font-size);
   color: var(--text-color);
-}
-
-/* Footer */
-.footer {
-  background-color: var(--first-color);
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.footer-link {
-  color: #fff;
-}
-
-.footer-link:hover {
-  color: var(--first-color-lighter);
-}
-
-.footer-social {
-  margin-top: 1rem;
 }

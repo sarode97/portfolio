@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subhiksha Sarode</title>
+    <!-- Font Awesome for icons in the "Contact Me" section -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
@@ -11,23 +16,22 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav-logo">Subhiksha Sarode</a>
-
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list grid">
             <li class="nav-item">
-              <a href="#home" class="nav-link"><i class="fa-solid fa-house nav-icon"></i> Home</a>
+              <a href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link"><i class="fa-solid fa-user nav-icon"></i> About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#skills" class="nav-link"><i class="fa-solid fa-file nav-icon"></i> Skills</a>
+              <a href="#skills" class="nav-link">Skills</a>
             </li>
             <li class="nav-item">
-              <a href="#projects" class="nav-link"><i class="fa-solid fa-briefcase nav-icon"></i> Projects</a>
+              <a href="#projects" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link"><i class="fa-solid fa-message nav-icon"></i> Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -38,15 +42,13 @@
       <!-- Home Section -->
       <section class="home section" id="home">
         <div class="home-container container grid">
-          <div class="home-content grid">
-            <div class="home-data">
-              <h1 class="home-title">Hi, I am Subhiksha Sarode</h1>
-              <h3 class="home-subtitle">Data Consultant | Business Analyst</h3>
-              <p class="home-description">
-                I bring over 3 years of expertise in data analytics, strategic consulting, and project management. Passionate about leveraging data to drive informed decisions.
-              </p>
-              <a href="#contact" class="button button-flex">Contact Me <i class="fa-regular fa-envelope button-icon"></i></a>
-            </div>
+          <div class="home-data">
+            <h1 class="home-title">Hi, I am Subhiksha Sarode</h1>
+            <h3 class="home-subtitle">Data Consultant | Business Analyst</h3>
+            <p class="home-description">
+              I bring over 3 years of expertise in data analytics, strategic consulting, and project management. Passionate about leveraging data to drive informed decisions.
+            </p>
+            <a href="#contact" class="button button-flex">Contact Me</a>
           </div>
         </div>
       </section>
@@ -65,7 +67,6 @@
         </div>
       </section>
 
-      <!-- Work Experience Section -->
       <div style="display: flex; justify-content: center; gap: 3rem; margin-bottom: 2rem;">
         <div style="text-align: center;">
           <h3 class="work-title" style="color: var(--first-color); margin-bottom: 0.5rem;">Data Engineer</h3>
@@ -81,13 +82,15 @@
         </div>
       </div>
       <div style="text-align: center; margin-bottom: 3rem;">
-        <a download="" href="Assets/Resume.pdf" class="button button-flex">Download Resume<i class="fa-solid fa-file-arrow-down button-icon"></i></a>
+        <a download="" href="Assets/Resume.pdf" class="button button-flex">Download Resume</a>
       </div>
 
       <!-- Skills Section -->
       <section class="skills section" id="skills">
         <h2 class="section-title">Skills</h2>
-        <span class="section-subtitle">Technical Expertise</span>
+        <div>
+          <span class="section-subtitle">Technical Expertise</span>
+        </div>
 
         <div class="skills-content container">
           <div class="skills-grid" style="margin-bottom: 2rem;">
@@ -119,12 +122,60 @@
         </div>
       </section>
 
+      <!-- Projects Section -->
+      <section class="portfolio section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <span class="section-subtitle">Recent Work</span>
+
+        <div class="portfolio-container container">
+          <div class="portfolio-row">
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Formula 1 Race Performance Dashboard</h3>
+              <p class="portfolio-description">
+                Built an interactive dashboard using Power BI to analyze race outcomes and KPIs, leading to a 15% optimization in strategy.
+              </p>
+              <a href="https://drive.google.com" target="_blank" class="button button-link">Know More</a>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Market Expansion Growth Strategy</h3>
+              <p class="portfolio-description">
+                Led analytics teams to identify growth opportunities in China and Brazil, achieving a 20% increase in market penetration.
+              </p>
+              <a href="https://drive.google.com" target="_blank" class="button button-link">Know More</a>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Financial ETL Pipelines</h3>
+              <p class="portfolio-description">
+                Developed optimized ETL pipelines for financial data, improving invoicing accuracy and enhancing forecasting capabilities.
+              </p>
+              <a href="https://drive.google.com" target="_blank" class="button button-link">Know More</a>
+            </div>
+          </div>
+          <div class="portfolio-row">
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Breast Cancer Predictor Model</h3>
+              <p class="portfolio-description">
+                Built a machine learning model using Python to predict breast cancer cases with 95% accuracy, aiding early detection and diagnosis.
+              </p>
+              <a href="https://drive.google.com" target="_blank" class="button button-link">Know More</a>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Data Migration Automation</h3>
+              <p class="portfolio-description">
+                Automated ETL processes for large-scale data migration, improving data accuracy by 30% and reducing manual effort.
+              </p>
+              <a href="https://drive.google.com" target="_blank" class="button button-link">Know More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Contact Section -->
       <section class="contact section" id="contact">
         <h2 class="section-title">Contact Me</h2>
         <span class="section-subtitle">Get in Touch</span>
 
-        <div class="contact-container container grid">
+        <div class="contact-container container grid" style="text-align: center;">
           <div class="contact-info">
             <i class="fa-regular fa-envelope contact-icon"></i>
             <div>

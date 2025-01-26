@@ -199,8 +199,8 @@ a:hover {
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem; /* Add spacing between projects */
+  grid-template-columns: repeat(3, 1fr); /* Display 3 items per row */
+  gap: 2rem; /* Spacing between items */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -222,6 +222,7 @@ a:hover {
 .portfolio-description {
   color: var(--text-color);
 }
+
 
 /* Contact Section */
 .contact {
